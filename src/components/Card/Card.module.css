@@ -1,0 +1,52 @@
+.card {
+	position: relative;
+	width: 100%;
+	border-radius: 20px;
+	background-color: var(--dark-light);
+	flex-direction: row;
+	box-shadow: 0 0 60px #94aac3;
+}
+
+.info {
+	padding: 20px;
+}
+
+.rocketName {
+	position: absolute;
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg) translateX(50px);
+	bottom: 0;
+	font-size: 70px;
+	font-weight: 900;
+	color: var(--light);
+}
+
+.title {
+	margin-bottom: 20px;
+}
+
+.details {
+	color: car(--light);
+}
+
+.image {
+	height: 500px;
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+.date {
+	position: absolute;
+	top: -7%;
+	right: -23%;
+	font-size: 60px;
+	font-weight: 900;
+	color: var(--light);
+	-webkit-text-stroke: 1px var(--light);
+}
+
+.date span {
+	color: transparent;
+	-webkit-text-stroke: 1px var(--light);
+}
