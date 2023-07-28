@@ -5,7 +5,7 @@ import {Sort} from '../pages/LaunchesPage/LaunchesPage';
 
 interface Query<T> {
   query: FilterQuery<T>;
-  sort: Sort;
+  sort?: Sort;
 }
 
 export interface PaginateResult<T> {
@@ -49,3 +49,4 @@ export const launchesApi = createApi({
 });
 
 export const {useGetLaunchesWithRocketQuery} = launchesApi;
+

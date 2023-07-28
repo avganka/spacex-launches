@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import styles from './Launches.module.css';
+import styles from './LaunchesPage.module.css';
 import {useGetLaunchesWithRocketQuery} from '../../store/api';
 import Card from '../../components/Card/Card';
 import Container from '../../components/Container/Container';
@@ -86,7 +86,6 @@ function LaunchesPage() {
                   initial={{scale: 0, opacity: 0}}
                   animate={{scale: 1, opacity: 1}}
                   exit={{scale: 0, opacity: 0}}
-                  transition={{stiffness: 200, damping: 20}}
                 >
                   <Card key={doc.id} launchInfo={doc} />
                 </motion.div>

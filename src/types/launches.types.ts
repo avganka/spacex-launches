@@ -2,7 +2,7 @@ import {Rocket} from './rockets.types';
 
 export interface ShortLaunchWithRocket
   extends Pick<Launch, 'id' | 'name' | 'details' | 'date_utc'> {
-  rocket: Rocket;
+  rocket: Pick<Rocket, 'name' | 'flickr_images'>;
 }
 
 export interface Launch {
